@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+
 
 function Projects() {
   return (
@@ -56,8 +56,6 @@ function Projects() {
 
         </div>
       </section>
-
-      <Footer />
 
     </div>
 

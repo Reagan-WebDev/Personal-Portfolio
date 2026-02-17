@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Footer from "../components/Footer";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -75,7 +74,7 @@ function Contact() {
             <textarea
               name="message"
               rows="5"
-              placeholder="Your Message here..."
+              placeholder="Your Message Here..."
               required
               value={formData.message}
               onChange={handleChange}
@@ -97,7 +96,6 @@ function Contact() {
         </div>
       )}
 
-      <Footer />
     </div>
   );
 }

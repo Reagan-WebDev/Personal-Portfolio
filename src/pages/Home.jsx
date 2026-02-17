@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
 
 function Home() {
   return (
     <>
+
+   
+
       {/* HERO SECTION */}
       <section id="home" className="hero">
+
+         <div className="myImage">
+            <img src="public/MyProfilePic.jpg" alt="MyProfilePic" />
+          </div>
+
         <h1>Hi, I'm Reagan Otieno</h1>
         <p>
           Telecommunications & IT Student passionate about building
@@ -66,8 +73,6 @@ function Home() {
           Contact Me
         </Link>
       </section>
-      
-      <Footer />
 
     </>
   );

@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+
 
 function Skills() {
   return (
@@ -86,8 +86,6 @@ function Skills() {
 
         </div>
       </section>
-
-    <Footer />
 
     </div>
   );

@@ -10,32 +10,32 @@ function Projects() {
 
         <div className="projects-grid">
 
-          <a href="https://github.com/Reagan-WebDev" className="project-card">
+          <a href="https://github.com/Reagan-WebDev" className="project-card" target="_blank">
             <h3>Location Tracker</h3>
             <p>Track and monitor locations dynamically.</p>
           </a>
 
-          <a href="https://github.com/Reagan-WebDev" className="project-card">
+          <a href="https://github.com/Reagan-WebDev" className="project-card" target="_blank">
             <h3>My Portfolio</h3>
             <p>Personal portfolio built using React.</p>
           </a>
 
-          <a href="https://github.com/Reagan-WebDev" className="project-card">
+          <a href="https://requestaudiliavalentines.netlify.app/" className="project-card" target="_blank">
             <h3>Valentines Proposal Surprise</h3>
             <p>Interactive React-based proposal website.</p>
           </a>
 
-          <a href="https://github.com/Reagan-WebDev" className="project-card">
+          <a href="https://github.com/Reagan-WebDev" className="project-card" target="_blank">
             <h3>Counter Machine</h3>
             <p>Simple counter application using React.</p>
           </a>
 
-          <a href="https://github.com/Reagan-WebDev" className="project-card">
+          <a href="https://github.com/Reagan-WebDev" className="project-card" target="_blank">
             <h3>Calculator</h3>
             <p>Functional calculator built with JavaScript.</p>
           </a>
 
-          <a href="https://github.com/Reagan-WebDev" className="project-card">
+          <a href="https://github.com/Reagan-WebDev" className="project-card" target="_blank">
             <h3>To-Do-List App</h3>
             <p>Task management app with dynamic updates.</p>
           </a>

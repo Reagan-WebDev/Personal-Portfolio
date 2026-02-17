@@ -9,6 +9,7 @@ function Contact() {
   });
 
   const [showPopup, setShowPopup] = useState(false);
+  const [submittedName, setSubmittedName] = useState(""); // 🔥 NEW
 
   const handleChange = (e) => {
     setFormData({
@@ -20,16 +21,21 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Store name separately before reset
+    setSubmittedName(formData.name);
+
     setShowPopup(true);
+
+    // Reset form immediately
+    setFormData({
+      name: "",
+      email: "",
+      message: ""
+    });
 
     // Auto close popup after 3 seconds
     setTimeout(() => {
       setShowPopup(false);
-      setFormData({
-        name: "",
-        email: "",
-        message: ""
-      });
     }, 3000);
   };
 
@@ -87,9 +93,10 @@ function Contact() {
       {/* POPUP */}
       {showPopup && (
         <div className="popup">
-          Hi {formData.name}, your message was submitted successfully!
+          Hi {submittedName}, your message was submitted successfully!
         </div>
       )}
+
       <Footer />
     </div>
   );

@@ -12,7 +12,9 @@ function Navbar() {
     "Poppins", "Roboto", "Montserrat", "Oswald", "Lato",
     "Raleway", "Nunito", "Ubuntu", "Merriweather",
     "Open Sans", "Playfair Display", "Inter",
-    "Fira Sans", "Source Sans Pro", "PT Sans", "Work Sans", "Times New Roman"
+    "Fira Sans", "Source Sans Pro", "PT Sans", "Work Sans", 
+    "Times New Roman", "Wingdings", "Webdings", "Jokerman", 
+    "Comic Sans MS"
   ];
 
   const toggleDarkMode = () => {

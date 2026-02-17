@@ -45,7 +45,7 @@ function Contact() {
             <input
               type="text"
               name="name"
-              placeholder="John Doe"
+              placeholder="Your Name"
               required
               value={formData.name}
               onChange={handleChange}
@@ -69,7 +69,7 @@ function Contact() {
             <textarea
               name="message"
               rows="5"
-                placeholder="Your message here..."
+              placeholder="Your Message here..."
               required
               value={formData.message}
               onChange={handleChange}
@@ -90,9 +90,7 @@ function Contact() {
           Hi {formData.name}, your message was submitted successfully!
         </div>
       )}
-    
-    <Footer /> 
-
+      <Footer />
     </div>
   );
 }

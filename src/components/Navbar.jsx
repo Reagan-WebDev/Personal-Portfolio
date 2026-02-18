@@ -1,37 +1,63 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Navbar() {
-  const [darkMode, setDarkMode] = useState(false);
-  const [font, setFont] = useState("Poppins");
-  const [menuOpen, setMenuOpen] = useState(false);
-
   const location = useLocation();
+
+  /* ================= DARK MODE ================= */
+
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("darkMode") === "true";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", darkMode);
+
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prev) => !prev);
+  };
+
+  /* ================= FONT ================= */
+
+  const [font, setFont] = useState(() => {
+    return localStorage.getItem("font") || "Poppins";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("font", font);
+    document.body.style.setProperty("--font-family", font);
+  }, [font]);
+
+  const changeFont = (e) => {
+    setFont(e.target.value);
+  };
+
+  /* ================= MENU ================= */
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const fonts = [
     "Poppins", "Roboto", "Montserrat", "Oswald", "Lato",
     "Raleway", "Nunito", "Ubuntu", "Merriweather",
     "Open Sans", "Playfair Display", "Inter",
-    "Fira Sans", "Source Sans Pro", "PT Sans", "Work Sans", 
-    "Times New Roman", "Wingdings", "Webdings", "Jokerman", 
-    "Comic Sans MS"
+    "Fira Sans", "Source Sans Pro", "PT Sans", "Work Sans",
+    "Times New Roman", "Comic Sans MS", "Webdings", "Wingdings", "Courier New"
   ];
 
-  const toggleDarkMode = () => {
-    document.body.classList.toggle("dark");
-    setDarkMode(!darkMode);
-  };
+  /* ================= SMOOTH SCROLL ================= */
 
-  const changeFont = (e) => {
-    document.body.style.setProperty("--font-family", e.target.value);
-    setFont(e.target.value);
-  };
-
-  // Smooth scroll for homepage sections
   const handleScroll = (id) => {
     if (location.pathname === "/") {
       const section = document.getElementById(id);
       section?.scrollIntoView({ behavior: "smooth" });
+      setMenuOpen(false);
     }
   };
 
@@ -82,7 +108,9 @@ function Navbar() {
 
           <select value={font} onChange={changeFont}>
             {fonts.map((f, i) => (
-              <option key={i}>{f}</option>
+              <option key={i} value={f}>
+                {f}
+              </option>
             ))}
           </select>
         </div>

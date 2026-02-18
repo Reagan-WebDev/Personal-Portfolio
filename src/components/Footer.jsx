@@ -34,6 +34,18 @@ function Footer() {
             <a href="https://www.instagram.com/reaganoluochotieno/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
           </div>
         </div>
+                <div className="whatsapp-container">
+        <p>Or chat with me directly:</p>
+
+        <a
+          href="https://wa.me/254782545727?text=Hello%20Reagan,%20I%20visited%20your%20portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-btn"
+        >
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
 
       </div>
 

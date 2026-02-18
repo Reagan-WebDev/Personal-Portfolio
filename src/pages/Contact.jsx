@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -95,6 +97,17 @@ function Contact() {
           Hi {submittedName}, your message was submitted successfully!
         </div>
       )}
+
+      <a
+        href="https://wa.me/254782545727?text=Hello%20Reagan,%20I%20visited%20your%20portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-btn"
+      >
+        <FaWhatsapp size={20} style={{ marginRight: "8px" }} />
+        Chat on WhatsApp
+      </a>
+      <br />
 
     </div>
   );

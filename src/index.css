@@ -535,4 +535,44 @@ a {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+.contact-page .whatsapp-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #25D366;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* whatsapp button styling*/
+.whatsapp-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-btn i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
 

@@ -27,9 +27,11 @@ function Footer() {
         <div className="footer-section">
           <h3>Connect With Me</h3>
           <div className="social-links">
-            <a href="https://github.com/Reagan-WebDev" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/reagan-oluoch-52ab1331a/" target="_blank">LinkedIn</a>
-            <a href="https://x.com/ReaganOluo57915" target="_blank">Twitter</a>
+            <a href="https://github.com/Reagan-WebDev" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/in/reagan-oluoch-52ab1331a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/ReaganOluo57915" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100093963591572" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/reaganoluochotieno/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
           </div>
         </div>
 

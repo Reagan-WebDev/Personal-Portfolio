@@ -67,12 +67,13 @@ function Navbar() {
 
       <div className={`nav-links ${menuOpen ? "active" : ""}`}>
         
-        {/* HOME */}
+      {/* HOME */}
         {location.pathname === "/" ? (
           <a onClick={() => handleScroll("home")}>Home</a>
         ) : (
           <Link to="/">Home</Link>
         )}
+
 
         {/* ABOUT */}
         {location.pathname === "/" ? (

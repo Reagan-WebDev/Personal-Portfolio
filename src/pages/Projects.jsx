@@ -40,6 +40,11 @@ function Projects() {
             <p>Task management app with dynamic updates.</p>
           </a>
 
+           <a href="https://agecalculatorreagan.netlify.app/" className="project-card" target="_blank">
+            <h3>Age Calculator</h3>
+            <p>Calculates the age when you enter your birth year.</p>
+          </a>
+
         </div>
       </section>
 

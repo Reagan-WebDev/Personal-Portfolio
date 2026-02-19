@@ -25,7 +25,7 @@ function Projects() {
             <p>Interactive React-based proposal website.</p>
           </a>
 
-          <a href="https://github.com/Reagan-WebDev" className="project-card" target="_blank">
+          <a href="https://counterappreagan.netlify.app/" className="project-card" target="_blank">
             <h3>Counter Machine</h3>
             <p>Simple counter application using React.</p>
           </a>

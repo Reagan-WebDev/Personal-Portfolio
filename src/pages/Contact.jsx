@@ -102,7 +102,7 @@ function Contact() {
       )}
 
       <a
-        href="https://wa.me/254782545727?text=Hello%20Reagan,%20I%20visited%20your%20portfolio"
+        href="https://wa.me/254782545727?text=Hello%20Reagan,%20I%20visited%20your%20portfolio%20and%20I%20wanna%20get%20in%20touch😁"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-btn"

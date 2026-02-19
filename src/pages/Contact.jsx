@@ -60,7 +60,6 @@ function Contact() {
             <input
               type="text"
               name="name"
-              placeholder="Reagan Oluoch"
               required
               value={formData.name}
               onChange={handleChange}
@@ -72,7 +71,6 @@ function Contact() {
             <input
               type="email"
               name="email"
-              placeholder="example@gmail.com"
               required
               value={formData.email}
               onChange={handleChange}
@@ -84,7 +82,6 @@ function Contact() {
             <textarea
               name="message"
               rows="5"
-              placeholder="Your Message..."
               required
               value={formData.message}
               onChange={handleChange}

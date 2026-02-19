@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -10,7 +10,7 @@ function Contact() {
   });
 
   const [showPopup, setShowPopup] = useState(false);
-  const [submittedName, setSubmittedName] = useState(""); // 🔥 NEW
+  const [submittedName, setSubmittedName] = useState("");
 
   const handleChange = (e) => {
     setFormData({
@@ -22,22 +22,30 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Store name separately before reset
-    setSubmittedName(formData.name);
+    emailjs.send(
+      "service_h4r23xp",      
+      "template_bq2jloc",     
+      formData,
+      "uZ2GTLCuKcPJcr6-8"       
+    )
+    .then(() => {
+      setSubmittedName(formData.name);
+      setShowPopup(true);
 
-    setShowPopup(true);
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+      });
 
-    // Reset form immediately
-    setFormData({
-      name: "",
-      email: "",
-      message: ""
+      setTimeout(() => {
+        setShowPopup(false);
+      }, 3000);
+    })
+    .catch((error) => {
+      console.log("FAILED...", error);
+      alert("Something went wrong. Please try again.");
     });
-
-    // Auto close popup after 3 seconds
-    setTimeout(() => {
-      setShowPopup(false);
-    }, 3000);
   };
 
   return (
@@ -52,7 +60,6 @@ function Contact() {
             <input
               type="text"
               name="name"
-              placeholder="Your Name"
               required
               value={formData.name}
               onChange={handleChange}
@@ -64,7 +71,6 @@ function Contact() {
             <input
               type="email"
               name="email"
-              placeholder="example@gmail.com"
               required
               value={formData.email}
               onChange={handleChange}
@@ -76,7 +82,6 @@ function Contact() {
             <textarea
               name="message"
               rows="5"
-              placeholder="Your Message Here..."
               required
               value={formData.message}
               onChange={handleChange}
@@ -88,10 +93,8 @@ function Contact() {
             Send Message
           </button>
         </form>
-
       </section>
 
-      {/* POPUP */}
       {showPopup && (
         <div className="popup">
           Hi {submittedName}, your message was submitted successfully!
@@ -107,7 +110,6 @@ function Contact() {
         <FaWhatsapp size={20} style={{ marginRight: "8px" }} />
         Chat on WhatsApp
       </a>
-      <br />
 
     </div>
   );

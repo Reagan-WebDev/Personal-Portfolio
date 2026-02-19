@@ -35,7 +35,7 @@ function Projects() {
             <p>Functional calculator built with JavaScript.</p>
           </a>
 
-          <a href="https://github.com/Reagan-WebDev" className="project-card" target="_blank">
+          <a href="https://todolistappreagan.netlify.app/" className="project-card" target="_blank">
             <h3>To-Do-List App</h3>
             <p>Task management app with dynamic updates.</p>
           </a>

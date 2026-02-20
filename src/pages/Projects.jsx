@@ -45,6 +45,11 @@ function Projects() {
             <p>Calculates the age when you enter your birth year.</p>
           </a>
 
+           <a href="https://expensetrackerreagan.netlify.app/" className="project-card" target="_blank">
+            <h3>Expense Tracker</h3>
+            <p>Helps Track and manage personal expenses.</p>
+          </a>
+        
         </div>
       </section>
 

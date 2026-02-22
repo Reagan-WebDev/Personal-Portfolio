@@ -10,7 +10,7 @@ function Projects() {
 
         <div className="projects-grid">
 
-          <a href="https://github.com/Reagan-WebDev" className="project-card" target="_blank">
+          <a href="https://exactlocationreagan.netlify.app/" className="project-card" target="_blank">
             <h3>Location Tracker</h3>
             <p>Track and monitor locations dynamically.</p>
           </a>

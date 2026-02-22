@@ -49,6 +49,11 @@ function Projects() {
             <h3>Expense Tracker</h3>
             <p>Helps Track and manage personal expenses.</p>
           </a>
+
+          <a href="https://cvgeneratorreagan.netlify.app/" className="project-card" target="_blank">
+            <h3>CV Generator</h3>
+            <p>Helps generate CVs by just a click. It helps generate basic to professional CVs.</p>
+          </a>
         
         </div>
       </section>

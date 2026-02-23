@@ -32,19 +32,35 @@ function Settings() {
     document.body.style.setProperty("--font-family", font);
   }, [font]);
 
-  return (
-    <div className="settings-page">
-      <h1>Settings</h1>
+return (
+  <div className="settings-wrapper">
+    <div className="settings-card">
+      <h1>⚙ Settings</h1>
 
-      <div className="setting-item">
-        <h3>Theme</h3>
-        <button onClick={() => setDarkMode(!darkMode)}>
-          {darkMode ? "Switch to Light Mode ☀" : "Switch to Dark Mode 🌙"}
-        </button>
+      {/* THEME */}
+      <div className="setting-row">
+        <div>
+          <h3>Dark Mode</h3>
+          <p>Switch between light and dark theme</p>
+        </div>
+
+        <label className="switch">
+          <input
+            type="checkbox"
+            checked={darkMode}
+            onChange={() => setDarkMode(!darkMode)}
+          />
+          <span className="slider"></span>
+        </label>
       </div>
 
-      <div className="setting-item">
-        <h3>Font Style</h3>
+      {/* FONT */}
+      <div className="setting-row">
+        <div>
+          <h3>Font Style</h3>
+          <p>Select your preferred font</p>
+        </div>
+
         <select value={font} onChange={(e) => setFont(e.target.value)}>
           {fonts.map((f, i) => (
             <option key={i} value={f}>
@@ -53,8 +69,10 @@ function Settings() {
           ))}
         </select>
       </div>
+
     </div>
-  );
+  </div>
+);
 }
 
 export default Settings;

@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import { FiSettings } from "react-icons/fi";
 
 function Navbar() {
   const location = useLocation();
@@ -49,7 +50,7 @@ function Navbar() {
 
         {/* NEW SETTINGS BUTTON */}
         <Link to="/settings" className="settings-btn">
-          ⚙ Settings
+            <FiSettings size={20} />
         </Link>
       </div>
 

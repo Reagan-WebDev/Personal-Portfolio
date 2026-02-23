@@ -574,5 +574,18 @@ a {
   margin-right: 8px;
   font-size: 1.2rem;
 }
-
+ /* Settings Button */
+ .settings-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary);
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+ }
 

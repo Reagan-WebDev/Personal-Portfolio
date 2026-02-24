@@ -2,7 +2,7 @@
   background: var(--bg-secondary);
   color: var(--text-primary);
   padding-top: 60px;
-  border-top: 3px solid #007BFF;
+  border-top: 3px solid var(--primary-color);
 }
 
 .footer-container {
@@ -17,7 +17,7 @@
 .footer-section h2,
 .footer-section h3 {
   margin-bottom: 15px;
-  color: #007BFF;
+  color: var(--primary-color);
 }
 
 .footer-section p {
@@ -40,7 +40,7 @@
 }
 
 .footer-section ul li a:hover {
-  color: #007BFF;
+  color: var(--primary-color);
   padding-left: 5px;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .social-links a:hover {
-  color: #007BFF;
+  color: var(--primary-color);
   transform: translateY(5px);
 }
 

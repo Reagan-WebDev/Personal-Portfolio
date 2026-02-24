@@ -53,7 +53,7 @@ a {
 }
 
 .logo {
-  color: var(--primary);
+  color: var(--primary-color);
   font-weight: bold;
 }
 /* Links */
@@ -71,13 +71,13 @@ a {
 }
 
 .nav-links a:hover {
-  color: var(--primary);
+  color: var(--primary-color);
 }
 
 /* 3D contact button */
 .contact-btn {
   padding: 10px 20px;
-  background: var(--primary);
+  background: var(--primary-color);
   color: white !important;
   border-radius: 8px;
   box-shadow: 0 5px 0 var(--primary-dark);
@@ -98,7 +98,7 @@ a {
 
 .toggle-btn {
   border: none;
-  background: var(--primary);
+  background: var(--primary-color);
   color: white;
   padding: 6px 10px;
   border-radius: 5px;
@@ -137,7 +137,7 @@ a {
 .hero {
   padding: 120px 10%;
   text-align: center;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
   color: white;
 }
 
@@ -182,7 +182,7 @@ a {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background: var(--primary);
+  background: var(--primary-color);
   color: white;
   border-radius: 8px;
   transition: 0.3s;
@@ -198,7 +198,7 @@ a {
   display: inline-block;
   margin-top: 25px;
   font-weight: bold;
-  color: var(--primary);
+  color: var(--primary-color);
   transition: 0.3s;
 }
 
@@ -216,7 +216,7 @@ a {
 
 .skill-card {
   padding: 40px;
-  background: var(--primary);
+  background: var(--primary-color);
   color: white;
   border-radius: 12px;
   transition: 0.3s ease;
@@ -247,7 +247,7 @@ a {
 
 .project-card:hover {
   transform: translateY(-12px);
-  border: 2px solid var(--primary);
+  border: 2px solid var(--primary-color);
 }
 
 /* Dark Mode Adjustment for Project Cards */
@@ -277,7 +277,7 @@ a {
   border-radius: 15px;
   font-size: 1.2rem;
   font-weight: bold;
-  background: var(--primary);
+  background: var(--primary-color);
   color: white;
   transition: all 0.3s ease;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -295,7 +295,7 @@ a {
 }
 
 .skill-box.learning {
-  background: linear-gradient(135deg, #0ea5e9, #007bff);
+  background: linear-gradient(135deg, #0ea5e9, var(--primary-color));
 }
 
 .skill-box.learning:hover {
@@ -340,7 +340,7 @@ a {
 .project-card:hover {
   transform: translateY(-15px);
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-  border: 2px solid var(--primary);
+  border: 2px solid var(--primary-color);
 }
 
 /* Currently working on Projects Styling */
@@ -349,7 +349,7 @@ a {
 }
 
 .project-card.current {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
   color: white;
 }
 
@@ -410,7 +410,7 @@ a {
 /* Input Focus Animation */
 .input-group input:focus,
 .input-group textarea:focus {
-  border-color: var(--primary);
+  border-color: var(--primary-color);
 }
 
 .input-group input:focus + label,
@@ -419,7 +419,7 @@ a {
 .input-group textarea:not(:placeholder-shown) + label {
   top: -10px;
   font-size: 0.8rem;
-  color: var(--primary);
+  color: var(--primary-color);
 }
 
 /* Submit Button Styling */
@@ -428,7 +428,7 @@ a {
   padding: 15px;
   border: none;
   border-radius: 8px;
-  background: var(--primary);
+  background: var(--primary-color);
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -445,7 +445,7 @@ a {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: #007BFF;
+  background: var(--primary-color);
   color: white;
   padding: 15px 25px;
   border-radius: 8px;
@@ -495,7 +495,7 @@ a {
 
 .about-text h2 {
   margin-bottom: 20px;
-  color: var(--primary);
+  color: var(--primary-color);
 }
 
 .about-text p {
@@ -522,7 +522,7 @@ a {
 
 .highlight-card h3 {
   margin-bottom: 15px;
-  color: var(--primary);
+  color: var(--primary-color);
 }
 
 .highlight-card p {
@@ -578,7 +578,7 @@ a {
  .settings-btn {
   position: fixed;
   right: 20px;
-  background: var(--primary);
+  background: var(--primary-color);
   color: white;
   padding: 12px;
   border-radius: 50%;

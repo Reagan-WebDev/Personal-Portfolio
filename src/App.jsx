@@ -14,6 +14,7 @@ function App() {
   useEffect(() => {
   const savedTheme = localStorage.getItem("darkMode") === "true";
   const savedFont = localStorage.getItem("font") || "Poppins";
+  const savedColor = localStorage.getItem("themeColor") || "#4f46e5";
 
   // Apply dark mode
   if (savedTheme) {
@@ -24,6 +25,7 @@ function App() {
 
   // Apply font
   document.body.style.setProperty("--font-family", savedFont);
+  document.documentElement.style.setProperty("--primary-color", savedColor);
 
 }, []);
   return (

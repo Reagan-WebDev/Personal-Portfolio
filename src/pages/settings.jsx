@@ -9,6 +9,10 @@ function Settings() {
     localStorage.getItem("font") || "Poppins"
   );
 
+  const [themeColor, setThemeColor] = useState(
+  localStorage.getItem("themeColor") || "#4f46e5"
+);
+
   const fonts = [
     "Poppins", "Roboto", "Montserrat", "Oswald", "Lato",
     "Raleway", "Nunito", "Ubuntu", "Merriweather",
@@ -16,6 +20,14 @@ function Settings() {
     "Fira Sans", "Source Sans Pro", "PT Sans", "Work Sans",
     "Times New Roman", "Comic Sans MS", "Courier New"
   ];
+
+  const themes = [
+  { name: "Indigo", color: "#4f46e5" },
+  { name: "Emerald", color: "#10b981" },
+  { name: "Rose", color: "#f43f5e" },
+  { name: "Amber", color: "#f59e0b" },
+  { name: "Cyan", color: "#06b6d4" }
+];
 
   useEffect(() => {
     localStorage.setItem("darkMode", darkMode);
@@ -31,6 +43,11 @@ function Settings() {
     localStorage.setItem("font", font);
     document.body.style.setProperty("--font-family", font);
   }, [font]);
+
+  useEffect(() => {
+  localStorage.setItem("themeColor", themeColor);
+  document.documentElement.style.setProperty("--primary-color", themeColor);
+}, [themeColor]);
 
 return (
   <div className="settings-wrapper">
@@ -69,6 +86,26 @@ return (
           ))}
         </select>
       </div>
+
+      <div className="setting-row column">
+  <div>
+    <h3>Theme Color</h3>
+    <p>Choose your favorite color theme</p>
+  </div>
+
+  <div className="theme-options">
+    {themes.map((t, i) => (
+      <div
+        key={i}
+        className={`theme-circle ${
+          themeColor === t.color ? "active" : ""
+        }`}
+        style={{ backgroundColor: t.color }}
+        onClick={() => setThemeColor(t.color)}
+      />
+    ))}
+  </div>
+</div>
 
     </div>
   </div>

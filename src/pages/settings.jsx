@@ -26,7 +26,8 @@ function Settings() {
   { name: "Emerald", color: "#10b981" },
   { name: "Rose", color: "#f43f5e" },
   { name: "Amber", color: "#f59e0b" },
-  { name: "Cyan", color: "#06b6d4" }
+  { name: "Cyan", color: "#06b6d4" },
+  { name: "Grey", color: "#6b7280" }
 ];
 
   useEffect(() => {

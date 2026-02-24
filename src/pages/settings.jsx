@@ -87,7 +87,7 @@ return (
         </select>
       </div>
 
-      <div className="setting-row column">
+                <div className="setting-row column">
   <div>
     <h3>Theme Color</h3>
     <p>Choose your favorite color theme</p>

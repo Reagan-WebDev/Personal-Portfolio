@@ -15,6 +15,7 @@ function App() {
   const savedTheme = localStorage.getItem("darkMode") === "true";
   const savedFont = localStorage.getItem("font") || "Poppins";
   const savedColor = localStorage.getItem("themeColor") || "#4f46e5";
+  const savedDark = localStorage.getItem("primaryDark") || "#3730a3";
 
   // Apply dark mode
   if (savedTheme) {
@@ -26,6 +27,7 @@ function App() {
   // Apply font
   document.body.style.setProperty("--font-family", savedFont);
   document.documentElement.style.setProperty("--primary-color", savedColor);
+  document.documentElement.style.setProperty("--primary-dark", savedDark);
 
 }, []);
   return (

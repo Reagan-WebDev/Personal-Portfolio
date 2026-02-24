@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Montserrat&family=Oswald&family=Lato&family=Raleway&family=Nunito&family=Ubuntu&family=Merriweather&family=Open+Sans&family=Playfair+Display&family=Inter&family=Fira+Sans&family=Source+Sans+Pro&family=PT+Sans&display=swap');
 
 :root {
-  --primary: #007bff;
-  --primary-dark: #004a99;
+  --primary-color: #4f46e5; /* default */
+  --primary-dark: #3730a3;  /* darker version */
   --bg: #ffffff;
   --text: #111;
   --section-padding: 80px 10%;
@@ -299,7 +299,7 @@ a {
 }
 
 .skill-box.learning:hover {
-  background: linear-gradient(135deg, #0284c7, #004a99);
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
 }
 
 /* Dark Mode Adjustments */
@@ -677,7 +677,7 @@ body.dark .settings-card {
 }
 
 input:checked + .slider {
-  background-color: #4f46e5;
+  background-color: var(--primary-color);
 }
 
 input:checked + .slider:before {
@@ -685,10 +685,6 @@ input:checked + .slider:before {
 }
 
 /* theme picker styling */
-:root {
-  --primary-color: #4f46e5; /* default indigo */
-}
-
 /* Use this variable everywhere instead of hardcoded colors */
 button,
 .contact-btn,

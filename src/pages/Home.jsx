@@ -14,10 +14,11 @@ function Home() {
           </div>
 
         <h1>Hi, I'm Reagan Otieno</h1>
-        <p>
+        <p className="hero-description">
           Telecommunications & IT Student passionate about building
           interactive web applications with React.
         </p>
+        
         <Link to="/projects" className="primary-btn animated-border">
           View My Work
         </Link>

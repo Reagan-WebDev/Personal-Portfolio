@@ -184,13 +184,14 @@ a {
   box-shadow: 4px 4px 5px 5px hsl(0, 0%, 100%);
 }
 
+.hero p.hero-description {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+}
 .hero h1 {
   font-size: 3rem;
-}
-
-.hero h1 p {
-  font-size: 1.5rem;
-  margin-top: 10px;
 }
 
 .hero p {

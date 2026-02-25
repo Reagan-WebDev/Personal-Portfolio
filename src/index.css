@@ -126,7 +126,7 @@ a {
   }
 
   .nav-links.active {
-    transform: translateX(0);
+    transform: translateX(0); 
   }
 
   .hamburger {
@@ -213,6 +213,68 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
   margin-top: 40px;
+}
+.home-skills-grid .skill-card {
+     transition: 
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border 0.3s ease,
+    box-shadow 0.3s ease;
+
+    position: relative;
+    border-radius: 12px;
+    background: var(--card-bg);
+    overflow: hidden;
+}
+.home-skills-grid .skill-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* border thickness */
+  border-radius: inherit;
+
+  background: linear-gradient(
+    90deg,
+    #ff0080,
+    #7928ca,
+    #2afadf,
+    #ff0080
+  );
+
+  background-size: 300% 300%;
+  animation: borderMove 3s linear infinite;
+
+  /* This makes it a border, not a full overlay */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.home-skills-grid .skill-card:hover::before {
+  opacity: 1;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+.home-skills-grid .skill-card:hover {
+  transform: translateY(-10px);
+  background: var(--primary-dark);
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 .skill-card {

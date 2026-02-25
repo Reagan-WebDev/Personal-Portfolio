@@ -1,6 +1,23 @@
 /* GOOGLE FONTS IMPORT (15 fonts) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Montserrat&family=Oswald&family=Lato&family=Raleway&family=Nunito&family=Ubuntu&family=Merriweather&family=Open+Sans&family=Playfair+Display&family=Inter&family=Fira+Sans&family=Source+Sans+Pro&family=PT+Sans&display=swap');
 
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* IE / old Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+
 :root {
   --primary-color: #4f46e5; /* default */
   --primary-dark: #3730a3;  /* darker version */

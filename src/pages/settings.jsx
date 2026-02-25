@@ -18,7 +18,7 @@ function Settings() {
     "Raleway", "Nunito", "Ubuntu", "Merriweather",
     "Open Sans", "Playfair Display", "Inter",
     "Fira Sans", "Source Sans Pro", "PT Sans", "Work Sans",
-    "Times New Roman", "Comic Sans MS", "Courier New"
+    "Times New Roman", "Comic Sans MS", "Courier New", "Tangerine", "Permanent Marker", "Indie Flower", "Kalam"
   ];
 
   const themes = [

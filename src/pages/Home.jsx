@@ -9,19 +9,21 @@ function Home() {
       {/* HERO SECTION */}
       <section id="home" className="hero">
 
-         <div className="myImage">
-            <img src="public/MyProfilePic.jpg" alt="MyProfilePic" />
+         <div className="hero-image-wrapper">
+            <img src="public/MyProfilePic.jpg" alt="MyProfilePic"/>
           </div>
 
-        <h1>Hi, I'm Reagan Otieno</h1>
-        <p className="hero-description">
-          Telecommunications & IT Student passionate about building
-          interactive web applications with React.
-        </p>
+        <div className="hero-text">
+          <h1>Hi, I'm Reagan Otieno</h1>
+          <p className="hero-description">
+            Telecommunications & IT Student passionate about building
+            interactive web applications with React.
+          </p>
         
         <Link to="/projects" className="primary-btn animated-border">
           View My Work
         </Link>
+        </div>
       </section>
 
       {/* ABOUT PREVIEW */}

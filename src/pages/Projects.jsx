@@ -64,7 +64,7 @@ function Projects() {
 
         <div className="projects-grid">
 
-          <a href="#" className="project-card current">
+          <a href="#" className="project-card current animated-border">
             <h3>Full Stack Login Form</h3>
             <p>Authentication system using MERN stack.</p>
           </a>

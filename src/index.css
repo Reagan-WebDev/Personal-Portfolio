@@ -17,7 +17,6 @@ body {
   -ms-overflow-style: none;
 }
 
-
 :root {
   --primary-color: #4f46e5; /* default */
   --primary-dark: #3730a3;  /* darker version */
@@ -187,6 +186,11 @@ a {
 
 .hero h1 {
   font-size: 3rem;
+}
+
+.hero h1 p {
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 .hero p {
@@ -439,11 +443,13 @@ a {
 
 .project-card.current {
   background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-  color: white;
+
+
 }
 
 .project-card.current:hover {
   transform: translateY(-15px) scale(1.02);
+  border: none;
 }
 
 /* Dark Mode Compatibility */

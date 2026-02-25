@@ -96,7 +96,7 @@ function Contact() {
       </section>
 
       {showPopup && (
-        <div className="popup">
+        <div className=" popup popup-animate">
           Hi {submittedName}, your message was submitted successfully!
         </div>
       )}

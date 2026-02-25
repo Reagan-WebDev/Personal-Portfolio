@@ -89,7 +89,7 @@ function Contact() {
             <label>Your Message</label>
           </div>
 
-          <button type="submit" className="submit-btn">
+          <button type="submit" className="submit-btn animated-border">
             Send Message
           </button>
         </form>

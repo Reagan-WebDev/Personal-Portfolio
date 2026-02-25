@@ -504,6 +504,8 @@ a {
 .submit-btn:hover {
   background: var(--primary-dark);
   transform: translateY(-3px);
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 /* PopUp Styling */

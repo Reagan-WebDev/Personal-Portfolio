@@ -69,7 +69,7 @@ function Home() {
       <section id="contact" className="section">
         <h2>Contact Me</h2>
         <p>Let’s build something amazing together.</p>
-        <Link to="/contact" className="primary-btn">
+        <Link to="/contact" className="primary-btn animated-border">
           Contact Me
         </Link>
       </section>

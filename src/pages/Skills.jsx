@@ -13,7 +13,7 @@ function Skills() {
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/HTML"
             target="_blank"
-            className="skill-box"
+            className="skill-box animated-border"
           >
             HTML
           </a>
@@ -21,7 +21,7 @@ function Skills() {
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/CSS"
             target="_blank"
-            className="skill-box"
+            className="skill-box animated-border"
           >
             CSS
           </a>
@@ -29,7 +29,7 @@ function Skills() {
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             target="_blank"
-            className="skill-box"
+            className="skill-box animated-border"
           >
             JavaScript
           </a>
@@ -37,7 +37,7 @@ function Skills() {
           <a
             href="https://react.dev/"
             target="_blank"
-            className="skill-box"
+            className="skill-box animated-border"
           >
             React
           </a>
@@ -45,7 +45,7 @@ function Skills() {
           <a
             href="https://www.mysql.com/"
             target="_blank"
-            className="skill-box"
+            className="skill-box animated-border"
           >
             MySQL
           </a>
@@ -53,7 +53,7 @@ function Skills() {
           <a
             href="https://www.mongodb.com/"
             target="_blank"
-            className="skill-box"
+            className="skill-box animated-border"
           >
             MongoDB
           </a>
@@ -71,7 +71,7 @@ function Skills() {
           <a
             href="https://nodejs.org/"
             target="_blank"
-            className="skill-box learning"
+            className="skill-box learning animated-border"
           >
             NodeJS
           </a>
@@ -79,7 +79,7 @@ function Skills() {
           <a
             href="https://expressjs.com/"
             target="_blank"
-            className="skill-box learning"
+            className="skill-box learning animated-border"
           >
             ExpressJS
           </a>

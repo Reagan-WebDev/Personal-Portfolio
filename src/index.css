@@ -213,6 +213,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
   margin-top: 40px;
+  
 }
 .home-skills-grid .skill-card {
      transition: 
@@ -226,6 +227,7 @@ a {
     border-radius: 12px;
     background: var(--card-bg);
     overflow: hidden;
+    color: var(--primary-color);
 }
 .home-skills-grid .skill-card::before {
   content: "";
@@ -787,4 +789,54 @@ a:hover {
 .theme-circle.active {
   border: 3px solid white;
   box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+/* Animated Border styling */
+/* Base animated border wrapper */
+.animated-border {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* The moving border itself */
+.animated-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    90deg,
+    #ff0080,
+    #7928ca,
+    #2afadf,
+    #ff0080
+  );
+  background-size: 300% 300%;
+  animation: borderMove 4s linear infinite;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes borderMove {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 300% 50%;
+  }
+}
+
+.animated-border:hover::before {
+  opacity: 1;
 }

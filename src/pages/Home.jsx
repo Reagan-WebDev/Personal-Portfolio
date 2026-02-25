@@ -18,7 +18,7 @@ function Home() {
           Telecommunications & IT Student passionate about building
           interactive web applications with React.
         </p>
-        <Link to="/projects" className="primary-btn">
+        <Link to="/projects" className="primary-btn animated-border">
           View My Work
         </Link>
       </section>

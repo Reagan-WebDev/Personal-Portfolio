@@ -19,7 +19,7 @@
 .hobbies-track {
   display: flex;
   gap: 60px;
-  animation: scrollLeft 35s linear infinite;
+  animation: scrollLeft 45s linear infinite;
   width: max-content;
 }
 

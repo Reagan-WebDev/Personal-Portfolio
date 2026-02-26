@@ -54,7 +54,7 @@ function About() {
                 href="public/ReaganCV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="download-btn"
+                className="download-btn animated-border"
               >
                 View My CV
               </a>

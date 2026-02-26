@@ -33,6 +33,12 @@ function Navbar() {
         )}
 
         {location.pathname === "/" ? (
+          <a onClick={() => handleScroll("hobbies")}>Hobbies</a>
+        ) : (
+          <Link to="/hobbies">Hobbies</Link>
+        )}
+        
+        {location.pathname === "/" ? (
           <a onClick={() => handleScroll("skills")}>Skills</a>
         ) : (
           <Link to="/skills">Skills</Link>

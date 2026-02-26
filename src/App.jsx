@@ -8,7 +8,8 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Settings from "./pages/Settings"; // 🔥 NEW
+import Settings from "./pages/settings"; // 🔥 NEW
+import Hobbies from "./pages/Hobbies";
 
 function App() {
   useEffect(() => {
@@ -41,6 +42,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/settings" element={<Settings />} /> {/* 🔥 NEW */}
+        <Route path="/hobbies" element={<Hobbies />} />
       </Routes>
 
       <Footer />

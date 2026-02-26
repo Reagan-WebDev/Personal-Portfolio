@@ -1,0 +1,47 @@
+.hobbies-page {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.hobbies-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.hobbies-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hobbies-track {
+  display: flex;
+  gap: 40px;
+  animation: scrollLeft 25s linear infinite;
+}
+
+.hobby-card {
+  min-width: 280px;
+  padding: 25px 30px;
+  border-radius: 50px; /* Curved look */
+  background: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  white-space: nowrap;
+  transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+  transform: scale(1.08);
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

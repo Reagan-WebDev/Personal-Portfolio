@@ -13,28 +13,51 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  perspective: 1000px; /* Enables 3D effect */
 }
 
 .hobbies-track {
   display: flex;
-  gap: 40px;
-  animation: scrollLeft 25s linear infinite;
+  gap: 60px;
+  animation: scrollLeft 35s linear infinite;
+  width: max-content;
 }
 
 .hobby-card {
-  min-width: 280px;
-  padding: 25px 30px;
-  border-radius: 50px; /* Curved look */
-  background: var(--primary-color);
+  min-width: 420px;
+  height: 250px;
+  padding: 30px 40px;
+  border-radius: 80px / 40px; /* Elliptical curve */
+
+    display: flex;                 /* enables flexbox */
+  align-items: center;           /* vertical center */
+  justify-content: center;       /* horizontal center */
+  text-align: center;            /* center multi-line text */
+  
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255,255,255,0.4),
+    var(--primary-color)
+  );
+
   color: white;
   font-weight: 500;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   white-space: nowrap;
-  transition: transform 0.3s ease;
+
+  transform: rotateY(-15deg);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.25),
+    inset -10px -10px 20px rgba(0,0,0,0.2),
+    inset 10px 10px 20px rgba(255,255,255,0.2);
 }
 
 .hobby-card:hover {
-  transform: scale(1.08);
+  transform: rotateY(0deg) scale(1.08);
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.35),
+    0 0 30px var(--primary-color);
 }
 
 @keyframes scrollLeft {

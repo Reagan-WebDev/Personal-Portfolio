@@ -32,12 +32,11 @@ function Navbar() {
           <Link to="/about">About</Link>
         )}
 
-        {location.pathname === "/" ? (
-          <a onClick={() => handleScroll("hobbies")}>Hobbies</a>
-        ) : (
-          <Link to="/hobbies">Hobbies</Link>
-        )}
+      
+      
+        <Link to="/hobbies">Hobbies</Link>
         
+
         {location.pathname === "/" ? (
           <a onClick={() => handleScroll("skills")}>Skills</a>
         ) : (

@@ -49,6 +49,15 @@ function About() {
               </p>
             </div>
 
+              <a
+                href="public/ReaganCV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="download-btn"
+              >
+                View My CV
+              </a>
+
           </div>
 
         </div>

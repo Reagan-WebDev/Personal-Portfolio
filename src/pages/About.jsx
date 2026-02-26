@@ -49,7 +49,8 @@ function About() {
               </p>
             </div>
 
-              <a
+          </div>
+            <a
                 href="public/ReaganCV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -57,9 +58,6 @@ function About() {
               >
                 View My CV
               </a>
-
-          </div>
-
         </div>
 
       </section>

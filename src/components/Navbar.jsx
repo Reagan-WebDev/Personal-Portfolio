@@ -56,7 +56,7 @@ function Navbar() {
         </Link>
 
         {/* NEW SETTINGS BUTTON */}
-        <Link to="/settings" className="settings-btn">
+        <Link to="/settings" className="settings-btn" onClick={() => setIsOpen(false)}>
             <FiSettings size={20} />
         </Link>
       </div>

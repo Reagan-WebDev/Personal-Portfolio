@@ -4,52 +4,54 @@ import { FiSettings } from "react-icons/fi";
 
 function Navbar() {
   const location = useLocation();
-  const [menuOpen, setMenuOpen] = useState(false);
+  /*const [menuOpen, setMenuOpen] = useState(false);*/
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleScroll = (id) => {
     if (location.pathname === "/") {
       const section = document.getElementById(id);
       section?.scrollIntoView({ behavior: "smooth" });
-      setMenuOpen(false);
+      setIsOpen(false);
     }
   };
 
   return (
+    /*<nav className={isOpen ? "nav-links active" : "nav-links"}>*/
     <nav className="navbar">
       <h2 className="logo">Reagan.dev</h2>
 
-      <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+      <div nav className={isOpen ? "nav-links active" : "nav-links"}>
         
         {location.pathname === "/" ? (
           <a onClick={() => handleScroll("home")}>Home</a>
         ) : (
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
         )}
 
         {location.pathname === "/" ? (
           <a onClick={() => handleScroll("about")}>About</a>
         ) : (
-          <Link to="/about">About</Link>
+          <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
         )}
 
       
       
-        <Link to="/hobbies">Hobbies</Link>
+        <Link to="/hobbies" onClick={() => setIsOpen(false)}>Hobbies</Link>
         
 
         {location.pathname === "/" ? (
           <a onClick={() => handleScroll("skills")}>Skills</a>
         ) : (
-          <Link to="/skills">Skills</Link>
+          <Link to="/skills" onClick={() => setIsOpen(false)}>Skills</Link>
         )}
 
         {location.pathname === "/" ? (
           <a onClick={() => handleScroll("projects")}>Projects</a>
         ) : (
-          <Link to="/projects">Projects</Link>
+          <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
         )}
 
-        <Link to="/contact" className="contact-btn">
+        <Link to="/contact" className="contact-btn" onClick={() => setIsOpen(false)}>
           Contact
         </Link>
 
@@ -59,7 +61,7 @@ function Navbar() {
         </Link>
       </div>
 
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+     <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         ☰
       </div>
     </nav>

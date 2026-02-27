@@ -175,6 +175,20 @@ a {
   position: relative;
   z-index: 2;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;  /* stack vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-top: 20px;
+  }
+}
+
 /* Animated Border for Hero Image */
 .hero-image-wrapper {
   position: relative;
@@ -905,6 +919,111 @@ a:hover {
 .theme-circle.active {
   border: 3px solid white;
   box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+/* small screen adjustments for settings page */
+@media (max-width: 500px) {
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* theme picker styling */
+/* Use this variable everywhere instead of hardcoded colors */
+button,
+.contact-btn,
+.settings-btn {
+  background-color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+/* theme picker styling cont */
+.setting-row.column {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*.theme-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}*/
+
+.theme-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+.theme-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 3px solid transparent;
+}
+
+.theme-circle:hover {
+  transform: scale(1.1);
+}
+
+.theme-circle.active {
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+.setting-row select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 0.5rem;
+}
 }
 
 /* Animated Border styling */

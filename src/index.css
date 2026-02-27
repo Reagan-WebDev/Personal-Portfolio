@@ -923,7 +923,7 @@ a:hover {
     #ff0080
   );
   background-size: 300% 300%;
-  animation: borderMove 4s linear infinite;
+  animation: borderMove 5s linear infinite;
 
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,

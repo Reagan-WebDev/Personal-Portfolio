@@ -875,10 +875,17 @@ a:hover {
   align-items: flex-start;
 }
 
-.theme-options {
+/*.theme-options {
   display: flex;
   gap: 15px;
   margin-top: 15px;
+}*/
+
+.theme-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 10px;
+  width: 100%;
 }
 
 .theme-circle {

@@ -15,6 +15,7 @@ function Home() {
 
         <div className="hero-text">
           <h1>Hi, I'm Reagan Otieno</h1>
+          <h2 className="hero-subtitle">Student, Web Developer</h2>
           <p className="hero-description">
             Telecommunications & IT Student passionate about building
             interactive web applications with React.

@@ -7,8 +7,23 @@ function Navbar() {
   const location = useLocation();
   /*const [menuOpen, setMenuOpen] = useState(false);*/
   const [isOpen, setIsOpen] = useState(false);
-  const [showHobbyPopup, setShowHobbyPopup] = useState(false);
+
+  /*const [showHobbyPopup, setShowHobbyPopup] = useState(false);*/
+  const [showHobbyPopup, setShowHobbyPopup] = useState(
+  localStorage.getItem("hobbyPopup") === "true"
+);
   const navigate = useNavigate();
+
+  /*useEffect(() => {
+  if (showHobbyPopup) {
+    const timer = setTimeout(() => {
+      setShowHobbyPopup(false);
+      localStorage.setItem("hobbyPopup", "false");
+    }, 60000); // 60 seconds
+
+    return () => clearTimeout(timer);
+  }
+}, [showHobbyPopup]);*/
 
   const handleScroll = (id) => {
     if (location.pathname === "/") {
@@ -39,14 +54,16 @@ function Navbar() {
 
       
       
-        <a
-          onClick={() => {
-            setShowHobbyPopup(true);
-            setIsOpen(false); // closes mobile navbar
-          }}
-        >
-          Hobbies
-        </a>
+        <div className="hobbies-wrapper">
+          <a
+            onClick={() => {
+              setShowHobbyPopup(true);
+              setIsOpen(false);
+            }}
+          >
+            Hobbies
+          </a>
+        </div>
         
 
         {location.pathname === "/" ? (
@@ -77,16 +94,26 @@ function Navbar() {
     <div className="popup-buttons">
       <button
         className="popup-close"
-        onClick={() => setShowHobbyPopup(false)}
+        onClick={() => {
+          setShowHobbyPopup(false);
+          localStorage.setItem("hobbyPopup", "false");
+
+        }}
+
       >
         Close
       </button>
 
       <button
         className="popup-yes"
-        onClick={() => {
+        /*onClick={() => {
           setShowHobbyPopup(false);
           navigate("/hobbies");
+        }}*/
+      onClick={() => {
+          localStorage.setItem("hobbyPopup", "true");
+          navigate("/hobbies");
+          setIsOpen(false);
         }}
       >
         Yes

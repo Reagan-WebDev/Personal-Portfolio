@@ -1,11 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { FiSettings } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const location = useLocation();
   /*const [menuOpen, setMenuOpen] = useState(false);*/
   const [isOpen, setIsOpen] = useState(false);
+  const [showHobbyPopup, setShowHobbyPopup] = useState(false);
+  const navigate = useNavigate();
 
   const handleScroll = (id) => {
     if (location.pathname === "/") {
@@ -36,7 +39,14 @@ function Navbar() {
 
       
       
-        <Link to="/hobbies" onClick={() => setIsOpen(false)}>Hobbies</Link>
+        <a
+          onClick={() => {
+            setShowHobbyPopup(true);
+            setIsOpen(false); // closes mobile navbar
+          }}
+        >
+          Hobbies
+        </a>
         
 
         {location.pathname === "/" ? (
@@ -60,6 +70,30 @@ function Navbar() {
             <FiSettings size={20} />
         </Link>
       </div>
+      {showHobbyPopup && (
+  <div className="hobby-popup">
+    <p>Continue to Hobbies page?</p>
+
+    <div className="popup-buttons">
+      <button
+        className="popup-close"
+        onClick={() => setShowHobbyPopup(false)}
+      >
+        Close
+      </button>
+
+      <button
+        className="popup-yes"
+        onClick={() => {
+          setShowHobbyPopup(false);
+          navigate("/hobbies");
+        }}
+      >
+        Yes
+      </button>
+    </div>
+  </div>
+)}
 
      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         ☰

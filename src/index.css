@@ -1163,8 +1163,8 @@ a:hover {
 
 .hobby-popup {
   position: absolute;
-  top: 120%; /* just below the link */
-  left: 50%;
+  top: 90%; /* just below the link */
+  left: 65%;
   transform: translateX(-50%);
 
   width: 260px;

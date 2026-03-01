@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+/*import { useState } from "react";*/
+import { useState, useEffect } from "react";
 import { FiSettings } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 
@@ -14,7 +15,7 @@ function Navbar() {
 );
   const navigate = useNavigate();
 
-  /*useEffect(() => {
+  useEffect(() => {
   if (showHobbyPopup) {
     const timer = setTimeout(() => {
       setShowHobbyPopup(false);
@@ -23,7 +24,7 @@ function Navbar() {
 
     return () => clearTimeout(timer);
   }
-}, [showHobbyPopup]);*/
+}, [showHobbyPopup]);
 
   const handleScroll = (id) => {
     if (location.pathname === "/") {

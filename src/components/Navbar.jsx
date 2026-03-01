@@ -59,6 +59,7 @@ function Navbar() {
           <a
             onClick={() => {
               setShowHobbyPopup(true);
+              localStorage.setItem("hobbyPopup", "true");
               setIsOpen(false);
             }}
           >

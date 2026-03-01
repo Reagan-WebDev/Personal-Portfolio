@@ -112,11 +112,18 @@ function Navbar() {
           setShowHobbyPopup(false);
           navigate("/hobbies");
         }}*/
-      onClick={() => {
+      /*onClick={() => {
           localStorage.setItem("hobbyPopup", "true");
           navigate("/hobbies");
           setIsOpen(false);
-        }}
+        }}*/
+
+        onClick={() => {
+          setShowHobbyPopup(false);              // hide immediately
+          localStorage.setItem("hobbyPopup", "false"); // don't persist it
+          navigate("/hobbies");                  // go to hobbies page
+          setIsOpen(false);
+  }}
       >
         Yes
       </button>

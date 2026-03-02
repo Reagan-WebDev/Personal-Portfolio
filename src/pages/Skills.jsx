@@ -66,6 +66,14 @@ function Skills() {
             C Language
           </a>
 
+          <a
+            href="https://www.w3schools.com/java/default.asp"
+            target="_blank"
+            className="skill-box animated-border"
+          >
+            Java
+          </a>
+
         </div>
       </section>
 

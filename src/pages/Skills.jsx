@@ -58,6 +58,14 @@ function Skills() {
             MongoDB
           </a>
 
+          <a
+            href="https://www.w3schools.com/c/c_intro.php"
+            target="_blank"
+            className="skill-box animated-border"
+          >
+            C Language
+          </a>
+
         </div>
       </section>
 

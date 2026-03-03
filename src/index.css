@@ -162,7 +162,7 @@ a {
   gap: 40px; /* space between image and text */
   padding: 120px 10%;
   text-align: center;
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  /*background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));*/
   color: white;
 }
 

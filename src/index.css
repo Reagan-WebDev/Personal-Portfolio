@@ -382,7 +382,7 @@ a {
 
 .home-skills-grid .skill-card:hover {
   transform: translateY(-10px);
-  background: var(--primary-dark);
+  background: transparent;
   color: var(--primary-color);
   font-weight: bold;
 }
@@ -459,7 +459,8 @@ a {
 
 .skill-box:hover {
   transform: translateY(-12px) scale(1.03);
-  background: var(--primary-dark);
+  /*background: var(--primary-dark);*/
+  background: transparent;
   box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 

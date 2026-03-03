@@ -523,13 +523,12 @@ a {
 
 .project-card.current {
   background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-
-
 }
 
 .project-card.current:hover {
   transform: translateY(-15px) scale(1.02);
   border: none;
+  background-color: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
 }
 
 /* Dark Mode Compatibility */

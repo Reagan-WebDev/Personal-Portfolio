@@ -296,7 +296,8 @@ a {
 }
 
 .primary-btn:hover {
-  background: var(--primary-dark);
+  /*background: var(--primary-dark);*/
+  background: transparent;
   transform: translateY(-3px);
 }
 

@@ -67,11 +67,11 @@ function Skills() {
           </a>
 
           <a
-            href="https://www.w3schools.com/java/default.asp"
+            href="https://www.w3schools.com/git/default.asp"
             target="_blank"
             className="skill-box animated-border"
           >
-            Java
+            Git
           </a>
 
         </div>

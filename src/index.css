@@ -525,10 +525,10 @@ a {
 .dark .project-card.current {
   color: white;
 }
-.project-card.current {
+/*.project-card.current {
   background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
   color: var(--primary-color);
-}
+}*/
 
 .project-card.current:hover {
   transform: translateY(-15px) scale(1.02);

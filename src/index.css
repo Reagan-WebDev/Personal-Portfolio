@@ -861,6 +861,15 @@ body.dark .settings-card {
   align-items: center;
   margin-bottom: 30px;
 }
+.setting-row select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  width: 95px;
+}
 
 .setting-row h3 {
   margin: 0;

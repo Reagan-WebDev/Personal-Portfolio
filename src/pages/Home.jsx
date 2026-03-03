@@ -10,7 +10,7 @@ function Home() {
       <section id="home" className="hero">
 
          <div className="hero-image-wrapper">
-            <img src="public/MyProfilePic.jpg" alt="MyProfilePic"/>
+            <img src="/MyProfilePic.jpg" alt="MyProfilePic"/>
           </div>
 
         <div className="hero-text">

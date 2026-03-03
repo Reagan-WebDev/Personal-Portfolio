@@ -522,16 +522,20 @@ a {
 .current-section {
   margin-top: 80px;
 }
-
+.dark .project-card.current {
+  color: white;
+}
 .project-card.current {
   background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: var(--primary-color);
 }
 
 .project-card.current:hover {
   transform: translateY(-15px) scale(1.02);
   border: none;
   /*background-color: linear-gradient(135deg, var(--primary-dark), var(--primary-color));*/
-  background-color: transparent;
+  background: transparent;
+  color: var(--primary-color);
 }
 
 /* Dark Mode Compatibility */
@@ -613,7 +617,7 @@ a {
 }
 
 .submit-btn:hover {
-  background: var(--primary-dark);
+  background: transparent;
   transform: translateY(-3px);
   color: var(--primary-color);
   font-weight: bold;
@@ -769,7 +773,7 @@ a {
 }
 
 .download-btn:hover {
-  background: var(--primary-dark);
+  background: transparent;
   transform: translateY(-3px);
 }
 
@@ -1045,6 +1049,13 @@ button,
 .settings-btn {
   background-color: var(--primary-color);
 }
+
+/*.submit-btn:hover {
+  background: transparent;
+  transform: translateY(-3px);
+  color: var(--primary-color);
+  font-weight: bold;
+}*/
 
 a:hover {
   color: var(--primary-color);

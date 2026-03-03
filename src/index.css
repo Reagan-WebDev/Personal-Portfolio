@@ -297,7 +297,7 @@ a {
 
 .primary-btn:hover {
   /*background: var(--primary-dark);*/
-  background: transparent;
+  background-color: transparent;
   transform: translateY(-3px);
 }
 
@@ -382,7 +382,7 @@ a {
 
 .home-skills-grid .skill-card:hover {
   transform: translateY(-10px);
-  background: transparent;
+  background-color: transparent;
   color: var(--primary-color);
   font-weight: bold;
 }
@@ -398,7 +398,7 @@ a {
 
 .skill-card:hover {
   transform: translateY(-10px);
-  background: var(--primary-dark);
+  background-color: var(--primary-dark);
 }
 
 /* Projects Grid */
@@ -460,7 +460,7 @@ a {
 .skill-box:hover {
   transform: translateY(-12px) scale(1.03);
   /*background: var(--primary-dark);*/
-  background: transparent;
+  background-color: transparent;
   box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
@@ -531,7 +531,7 @@ a {
   transform: translateY(-15px) scale(1.02);
   border: none;
   /*background-color: linear-gradient(135deg, var(--primary-dark), var(--primary-color));*/
-  background: transparent;
+  background-color: transparent;
 }
 
 /* Dark Mode Compatibility */

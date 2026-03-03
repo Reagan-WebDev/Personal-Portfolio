@@ -861,7 +861,18 @@ body.dark .settings-card {
   align-items: center;
   margin-bottom: 30px;
 }
-.setting-row select {
+  .setting-row select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  width: 200px;
+  }
+
+@media (max-width: 768px) {
+  .setting-row select {
   padding: 8px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -869,6 +880,7 @@ body.dark .settings-card {
   color: var(--primary-color);
   font-size: 0.9rem;
   width: 95px;
+}
 }
 
 .setting-row h3 {

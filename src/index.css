@@ -474,7 +474,7 @@ a {
 }
 
 .skill-box.learning:hover {
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  background: transparent;
 }
 
 /* Dark Mode Adjustments */
@@ -530,7 +530,8 @@ a {
 .project-card.current:hover {
   transform: translateY(-15px) scale(1.02);
   border: none;
-  background-color: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+  /*background-color: linear-gradient(135deg, var(--primary-dark), var(--primary-color));*/
+  background: transparent;
 }
 
 /* Dark Mode Compatibility */

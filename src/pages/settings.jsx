@@ -27,7 +27,10 @@ function Settings() {
   { name: "Rose", color: "#f43f5e" },
   { name: "Amber", color: "#f59e0b" },
   { name: "Cyan", color: "#06b6d4" },
-  { name: "Grey", color: "#6b7280" }
+  { name: "Grey", color: "#6b7280" },
+  { name: "Neon Cyan", color: "#22D3EE" },
+  { name: "Neon Magenta", color: "#FF0090" },
+  { name: "Rich Cocoa", color: "#875F42" }
 ];
 
   useEffect(() => {

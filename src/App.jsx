@@ -10,6 +10,8 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Settings from "./pages/settings"; // 🔥 NEW
 import Hobbies from "./pages/Hobbies";
+import MusicPage from "./pages/MusicPage";
+import PlayerPage from "./pages/PlayerPage";
 
 function App() {
   useEffect(() => {
@@ -43,6 +45,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/settings" element={<Settings />} /> {/* 🔥 NEW */}
         <Route path="/hobbies" element={<Hobbies />} />
+        <Route path="/music" element={<MusicPage />} />
+        <Route path="/player/:id" element={<PlayerPage />} />
       </Routes>
 
       <Footer />

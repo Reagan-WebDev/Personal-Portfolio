@@ -141,3 +141,54 @@
   }
 }
 }
+
+/* explore my music button styling */
+/* container centers the button */
+.explore-music-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* button styling */
+.explore-music-btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 10px;
+
+  background: var(--theme-color);
+  color: var(--primary-color);
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* hover effect */
+.explore-music-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.3);
+  filter: brightness(1.1);
+}
+
+/* click effect */
+.explore-music-btn:active {
+  transform: scale(0.95);
+}
+
+.dark .explore-music-btn {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .explore-music-btn {
+    width: 80%;
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+}

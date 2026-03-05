@@ -1,4 +1,5 @@
 import "../styles/Hobbies.css";
+import { useNavigate } from "react-router-dom";
 
 const hobbies = [
   "Writing my experiences ✍️",
@@ -10,6 +11,7 @@ const hobbies = [
 ];
 
 function Hobbies() {
+  const navigate = useNavigate();
   return (
     <div className="hobbies-page">
       <h1 className="hobbies-title">My Hobbies</h1>
@@ -23,6 +25,16 @@ function Hobbies() {
           ))}
         </div>
       </div>
+
+      <div className="explore-music-container">
+        <button
+          className="explore-music-btn animated-border"
+          onClick={() => navigate("/music")}
+        >
+          Explore My Music
+        </button>
+      </div>
+
     </div>
   );
 }
